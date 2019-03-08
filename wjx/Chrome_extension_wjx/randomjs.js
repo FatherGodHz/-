@@ -168,6 +168,13 @@
             var rnnum = randint(1, select.length - 1);
             select.selectedIndex = rnnum;
         }
+        
+        this.blankaa = function(subject){
+            var arr = ["太阳光大、父母恩大、君子量大、小人气大","成功是优点的发挥，失败是缺点的累积","不要小看自己，因为人有无限的可能", "口说好话、心想好意、身行好事","原谅别人就是善待自己","手心向下是助人，手心向上是求人；助人快乐，求人痛苦","行尸走肉","花花公子","绘声绘影","国色天香","相亲相爱","八仙过海","金玉良缘","掌上明珠","皆大欢喜","逍遥法外"]; 
+            var index = Math.floor((Math.random()*arr.length)); 
+            var hahaha = subject.querySelectorAll("textarea")[0];
+            hahaha.value = arr[index];
+        }
 
         this.singleSlider = function(subject) {
 
@@ -263,6 +270,7 @@
                 }
             } else if (q[i].querySelectorAll("textarea")[0]) {
                 console.log("填空", i);
+                rc.blankaa(q[i]);
             } else if (q[i].querySelectorAll(".slider")[0]) {
                 console.log("Slider-Single-line", i);
                 rc.singleSlider(q[i]);
