@@ -8,7 +8,7 @@
 
 - 单选
 - 多选
-
+- 填空   新增,如果需要指定内容，请修改Chrome_extension_wjx/randomjs.js 文件  搜索：blankaa属性
 ### 普通
 
 - 单选
